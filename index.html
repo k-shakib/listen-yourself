@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listen Yourself</title>
+    <!-- custom css is goes here -->
+    <link rel="stylesheet" href="./assets/sass/style.css" />
+  </head>
+  <body>
+    <div class="music">
+      <nav class="nav flex container">
+        <div class="logo"><h1>Løgø</h1></div>
+        <div class="menu">
+          <svg
+            id="menu_bar"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path
+              d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"
+              fill="rgba(68,68,68,1)"
+            />
+          </svg>
+          <ul class="flex">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Specification</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Connect</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="player container flex">
+        <h1>
+          THE <br />
+          REAL <br />
+          SOUND <br />
+        </h1>
+        <div class="play_btn flex">
+          <p>Click Here To Listen</p>
+          <img src="./assets/images/play.png" alt="" id="btn" />
+        </div>
+      </div>
+    </div>
+
+    <audio id="my_list">
+      <source src="./assets/audio/112.mp3" type="audio/mp3" />
+    </audio>
+    <!-- custom script goes here  -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

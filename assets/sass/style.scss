@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.music {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.nav {
+  padding: 2rem 0;
+  // font-size: 4vh;
+  .logo {
+    font-size: 2rem;
+    color: transparent;
+    background: linear-gradient(gray, black, green, gray);
+    background-clip: text;
+  }
+  .menu {
+    position: relative;
+    svg {
+      width: 2rem;
+      height: 2rem;
+      display: none;
+    }
+    ul {
+      position: relative;
+      list-style-type: none;
+      li {
+        padding: 0.7rem;
+        a {
+          text-decoration: none;
+          color: gray;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+.player {
+  // height: 90vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  h1 {
+    font-size: 4rem;
+    color: white;
+  }
+  .play_btn {
+    color: gray;
+    img {
+      cursor: pointer;
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav {
+    .logo {
+      font-size: 1.7rem;
+    }
+    .menu {
+      ul {
+        li {
+          padding: 0.45rem;
+          a {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+  .player {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .nav {
+    .logo {
+      font-size: 1.4rem;
+    }
+    .menu {
+      ul {
+        li {
+          padding: 0.3rem;
+          a {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+  .player {
+    h1 {
+      font-size: 2.8rem;
+    }
+    .play_btn {
+      p {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  .nav {
+    .logo {
+      font-size: 1.5rem;
+    }
+    .menu {
+      svg {
+        display: block;
+      }
+      ul {
+        display: none;
+      }
+    }
+  }
+  .player {
+    h1 {
+      font-size: 2.3rem;
+    }
+    .play_btn {
+      p {
+        display: none;
+      }
+    }
+  }
+}
